@@ -91,6 +91,10 @@ To get the juice out of this code you will need to have [Node.js](https://nodejs
 
 Also bower and grunt-cli installed globally.
 
+Using grunt is just mind blowing. 
+
+If you are not using it, you are missing out on some incredible powers.
+
 ### Created for Child Themes ###
 
 Why create new themes all the time if child themes exists since year 0.
@@ -104,8 +108,6 @@ this will create a new child theme with grunt already installed.
 use `grunt clean:dev` to remove the bower_components and node_modules folder.
 
 ### Builder settings ###
-
-Using grunt is just mind blowing. If you are not using it, you are missing out on some incredible powers.
 
 1. Go to builder path `cd maketador/`
 2. Run `npm install`
@@ -122,7 +124,7 @@ Then ese `grunt dev` this will also reload the browser.
 
 ``````json
 {
-    "test_dir" : "/full-path/to/localhost/wp-content/plugins/wp-embed-facebook/"
+    "test_dir" : "/full-path/to/localhost/wp-content/themes/maketador/"
 }
 ``````
 
@@ -135,8 +137,8 @@ Create a pull request to the master branch.
 
 ## Changelog ##
 
-### v1.0.1 13/07/2016 ###
+### 1.0.1 13/07/2016 ###
 - Bug fixes, hard testing, sweat and blood.
 
-### v1.0.0 08/06/2016 ###
+### 1.0.0 08/06/2016 ###
 - Birth

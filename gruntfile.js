@@ -103,7 +103,7 @@ module.exports = function (grunt) {
                     '!node_modules/**',
                     '!bower_components/**',
                     '!.gitignore',
-                    '!variables.json',
+                    '!.git'
                 ]
             },
             child: {
@@ -227,6 +227,7 @@ module.exports = function (grunt) {
                 src: [
                     '**',
                     '!.gitignore',
+                    '!.git/**',
                     '!bower_components/**',
                     '!node_modules/**'
                 ]
