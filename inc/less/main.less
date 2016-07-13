@@ -1,0 +1,122 @@
+// Bootstrap
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "_bootswatch.less";
+@icon-font-path: "../fonts/";
+
+/*!
+* Sigami Maketador CSS v1.0 (http://sigami.net)
+* Licensed under GNU (http://www.gnu.org/licenses/gpl-2.0.html)
+*/
+@import "_underscore.less";
+@import "_gallery.less";
+@import "_widgets.less";
+@import "_comments.less";
+
+
+
+/* Admin Top Navigation fix */
+body.admin-bar .navbar-fixed-top{
+  top: 28px;
+}
+@media screen and ( max-width: 782px ) {
+  body.admin-bar .navbar-fixed-top{
+    top: 42px;
+  }
+}
+
+@media screen and ( min-width: 780px ) {
+  .site-content {
+    min-height: 90vh;//This may need to change according to header size.
+  }
+}
+
+.navbar-static-top {
+  margin-bottom: 0;
+}
+
+.brand {
+  font-size: @font-size-h1;
+  line-height: @font-size-h1;
+  color: @brand-primary;
+  &:hover,
+  &:focus {
+    color: darken(@brand-primary, 10%);
+    background-color: @navbar-default-brand-hover-bg;
+    text-decoration: none;
+  }
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.navbar-brand > img {
+  max-width: 150px;
+  top: -6px;
+  position: relative;
+}
+
+.page-header {
+  margin-top:0;
+}
+
+.comments-title {
+  margin-top: 0;
+}
+.comment-reply-title {
+  margin-top: 0;
+}
+
+@keyframes fixed-nav {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+#fixed-nav {
+  &.affix {
+    top: 0;
+    left: 0;
+    right: 0;
+    animation-name: fixed-nav;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+  }
+}
+
+/* Admin Top Navigation affix fix */
+body.admin-bar #fixed-nav.affix{
+  top: 28px;
+}
+
+@media screen and ( max-width: 782px ) {
+  body.admin-bar #fixed-nav.affix{
+    top: 42px;
+  }
+}
+@media screen and ( max-width: 602px ) {
+  body.admin-bar #fixed-nav.affix{
+    top: 0 !important;
+  }
+}
+
+
+//center navbar
+//TODO Test properly
+.navbar.center .navbar-inner {
+  text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+  display:inline-block;
+  float: none;
+  vertical-align: top;
+}
+//img[class*='attachment-']{
+//  max-width: 100%;
+//  height: auto;
+//}

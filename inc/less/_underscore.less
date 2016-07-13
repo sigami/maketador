@@ -1,0 +1,188 @@
+/*
+based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  //clip: rect(1px, 1px, 1px, 1px);
+  //position: absolute !important;
+  //height: 1px;
+  //width: 1px;
+  //overflow: hidden;
+  .sr-only
+}
+
+.screen-reader-text:focus {
+  //background-color: #f1f1f1;
+  //border-radius: 3px;
+  //box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  //clip: auto !important;
+  //color: #21759b;
+  //display: block;
+  //font-size: 14px;
+  //font-size: 0.875rem;
+  //font-weight: bold;
+  //height: auto;
+  //left: 5px;
+  //line-height: normal;
+  //padding: 15px 23px 14px;
+  //text-decoration: none;
+  //top: 5px;
+  //width: auto;
+  //z-index: 100000; /* Above WP toolbar. */
+  .sr-only-focusable;
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+// Media alignment
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+.aligncenter {
+  display: block;
+  margin: (@line-height-computed / 2) auto;
+}
+.alignleft,
+.alignright {
+  margin-bottom: (@line-height-computed / 2);
+}
+@media (min-width: @screen-sm-min) {
+  // Only float if not on an extra small device
+  .alignleft {
+    float: left;
+    margin-right: (@line-height-computed / 2);
+  }
+  .alignright {
+    float: right;
+    margin-left: (@line-height-computed / 2);
+  }
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+//.widget {
+//  margin: 0 0 1.5em;
+//}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+  display: block;
+}
+
+//.hentry {
+//  margin: 0 0 1.5em;
+//}
+
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+//.page-content,
+//.entry-content,
+//.entry-summary {
+//  margin: 1.5em 0 0;
+//}
+
+//.page-links {
+//  clear: both;
+//  margin: 0 0 1.5em;
+//}
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+//.comment-content a {
+//  word-wrap: break-word;
+//}
+//
+//.bypostauthor {
+//  display: block;
+//}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object, {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+//.wp-caption {
+//  margin-bottom: 1.5em;
+//  max-width: 100%;
+//}
+////
+//.wp-caption img[class*="wp-image-"] {
+//  display: block;
+//  margin-left: auto;
+//  margin-right: auto;
+//  border-radius: 0;
+//}
+//.wp-caption .wp-caption-text {
+//  margin: 0.8075em 0;
+//}
+.wp-caption-text {
+  text-align: center;
+}

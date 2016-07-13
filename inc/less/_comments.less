@@ -1,0 +1,92 @@
+ol.comment-list li.bypostauthor{
+  background-color: lighten(@brand-success,20%) !important;
+}
+
+
+ol.comment-list,
+ol.comment-list ul.children{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+ol.comment-list time a{
+	font-size: .8em;
+	color: @gray-light;
+}
+
+ol.comment-list ul.children li{
+  background-color: rgba(111, 111, 111, 0.11);
+}
+
+ol.comment-list ul.children li ul.children li{
+	background-color: rgba(111, 111, 111, 0.11);
+}
+
+ol.comment-list ul.children li ul.children li ul.children li{
+  background-color: rgba(111, 111, 111, 0.11);
+}
+
+ol.comment-list a.comment-edit-link{
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+ol.comment-list span.edit-comment{
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+
+a.comment-reply-link{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	.btn;
+	.btn-sm;
+	.btn-success;
+}
+
+#cancel-comment-reply-link{
+	.btn;
+	.btn-xs;
+	.btn-warning;
+	margin-left: 1em;
+}
+
+#comment-nav ul{
+	list-style-type: none;
+	margin: 0;
+}
+
+#comment-form-elements{
+	list-style-type: none;
+	margin: 0;
+}
+
+.comment .vcard .avatar{
+	padding-right: 0;
+}
+
+.comment .vcard .comment-text {
+	margin-left: 0;
+  	h3 {
+      margin: 0;
+    }
+}
+
+img.avatar{
+	border: 2px solid @gray-dark;
+	border-radius: 3px;
+}
+.comment-author.vcard {
+  padding:10px 0;
+}
+ol.comment-list .comment{
+	padding:0 10px;
+	background-color: rgba(240, 240, 240, 0.11);
+}
+
+.single-comment {
+  border-bottom: 1px solid @gray-dark;
+}

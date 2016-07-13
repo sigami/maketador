@@ -1,0 +1,29 @@
+{
+  "name": "maketador",
+  "version": "1.0",
+  "homepage": "http://sigami.net",
+  "authors": [
+    "Miguel Sirvent <miguel@sigami.net>"
+  ],
+  "description": "The only Bootstrap theme you will ever need.",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "bootstrap",
+    "WordPress"
+  ],
+  "license": "GNU",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "font-awesome": "~4",
+    "bootstrap": "~3",
+    "bootstrap-rtl": "~3"
+  },
+  "main": "index.php",
+  "private": true
+}

@@ -1,0 +1,372 @@
+# Copyright (C) 2016 Miguel Sirvent
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Maketador 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2016-06-24 00:21:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Miguel Sirvent <miguel@sigami.net>\n"
+"Language-Team: Miguel Sirvent <miguel@sigami.net>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-Wpheader: style.css\n"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the "
+"links below or a search?"
+msgstr ""
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:71
+msgid "Review this product"
+msgstr ""
+
+#: comments.php:71
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:73
+msgid "Review"
+msgstr ""
+
+#: comments.php:73
+msgid "Reply"
+msgstr ""
+
+#: comments.php:76
+msgid "Your Comment Here..."
+msgstr ""
+
+#: functions.php:60
+msgid "Primary"
+msgstr ""
+
+#: functions.php:111
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:113 functions.php:123
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:121
+msgid "Footer Sidebar"
+msgstr ""
+
+#: header.php:28
+msgid "Skip to content"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:86
+msgid ""
+"This post is password protected. To view it please enter your password "
+"below:"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:90
+msgid "Password"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:92
+msgid "Submit"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:177
+msgid "Edit"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:181
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/maketador_bootstrap.php:211
+msgid "Name"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:212 inc/maketador_bootstrap.php:225
+msgid "required"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:218
+msgid "Your Name"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:224
+msgid "Email"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:231
+msgid "Your Email"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:234
+msgid "will not be published"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:237
+msgid "Website"
+msgstr ""
+
+#: inc/maketador_bootstrap.php:243
+msgid "Your Website"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Maketador"
+msgstr ""
+
+#: inc/maketador_customizer.php:63
+msgid "Theme specific options"
+msgstr ""
+
+#: inc/maketador_customizer.php:70
+msgid "Header"
+msgstr ""
+
+#: inc/maketador_customizer.php:73
+msgid "Choose header type, colors, etc."
+msgstr ""
+
+#: inc/maketador_customizer.php:100
+msgid "Header Type"
+msgstr ""
+
+#: inc/maketador_customizer.php:105
+msgid "Static"
+msgstr ""
+
+#: inc/maketador_customizer.php:106
+msgid "Fixed"
+msgstr ""
+
+#: inc/maketador_customizer.php:107
+msgid "Normal"
+msgstr ""
+
+#: inc/maketador_customizer.php:108
+msgid "Normal then fixed navbar"
+msgstr ""
+
+#: inc/maketador_customizer.php:118
+msgid "Logo Image"
+msgstr ""
+
+#: inc/maketador_customizer.php:129
+msgid "Layout"
+msgstr ""
+
+#: inc/maketador_customizer.php:132
+msgid "Layout options"
+msgstr ""
+
+#: inc/maketador_customizer.php:149
+msgid "Layout Type"
+msgstr ""
+
+#: inc/maketador_customizer.php:154
+msgid "Content Sidebar"
+msgstr ""
+
+#: inc/maketador_customizer.php:155
+msgid "Sidebar Content"
+msgstr ""
+
+#: inc/maketador_customizer.php:156
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/maketador_customizer.php:175
+msgid "Content Size"
+msgstr ""
+
+#: inc/maketador_customizer.php:196
+msgid "Sidebar Size"
+msgstr ""
+
+#: inc/maketador_customizer.php:217
+msgid "Full width class"
+msgstr ""
+
+#: inc/maketador_customizer.php:227
+msgid "Footer"
+msgstr ""
+
+#: inc/maketador_customizer.php:230
+msgid "Footer options"
+msgstr ""
+
+#: inc/maketador_customizer.php:247
+msgid "Footer Text"
+msgstr ""
+
+#: inc/maketador_customizer.php:337
+msgid "created with maketador theme"
+msgstr ""
+
+#: inc/template-tags.php:50 inc/template-tags.php:56
+#. translators: used between list items
+msgid ","
+msgstr ""
+
+#: inc/template-tags.php:52
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:58
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:65
+#. translators: %s: post title
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:117
+#. translators: %s: Name of current post
+msgid "%s Edit %s"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:23
+msgid "Pages:"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:48
+msgid "Post navigation"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:71
+msgid "Previous"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:72
+msgid "Next"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:74
+msgid "First"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:76
+msgid "Last"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:153
+msgid "Comment navigation"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:154
+msgid "Newer Comments %s"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:156
+msgid "%s Older Comments"
+msgstr ""
+
+#: search.php:15
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:4 searchform.php:6
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content.php:34
+#. translators: %s: Name of current post.
+msgid ""
+"Continue reading %s <span class=\"meta-nav\"><span class=\"glyphicon "
+"glyphicon-chevron-right\" aria-hidden=\"true\"></span><\t/span>"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://sigami.net/maketador"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The only Bootstrap theme you will ever need. Know more about it <a "
+"href=\"http://github.com/sigami/maketador\">Here</a>"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Miguel Sirvent"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://draoomedia.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blank no container"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blank"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Inverse Layout"
+msgstr ""
+
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/template-tags.php:28
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:33
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
