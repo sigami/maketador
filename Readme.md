@@ -42,7 +42,7 @@ WordPress theme based on [underscore.me](http://underscores.me/) and [Bootstrap 
 - Extra image sizes
   - maketador_featured 880x430 px
   - maketador_banner 1200x500 px
-- All options accessible on customizer and saved on theme_mod 
+- All options are accessible on customizer and saved on theme_mod 
 - Child Theme for replacing all files   
 - Right to left support [bootstrap-rtl](http://github.com/morteza)
   
