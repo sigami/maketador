@@ -1,10 +1,3 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Linux template
-*~
-
-# KDE directory preferences
-.directory
-
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
 ### Windows template
@@ -55,6 +48,7 @@ Temporary Items
 ### builder
 bower_components
 node_modules
+svn
 .idea
 .sass_cache
 variables.json

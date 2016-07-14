@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Maketador 1.0.1\n"
+"Project-Id-Version: Maketador 1.0.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
 "POT-Creation-Date: 2016-06-24 00:21:43+00:00\n"
 "MIME-Version: 1.0\n"
@@ -321,7 +321,7 @@ msgid ""
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://sigami.net/maketador"
+msgid "https://github.com/sigami/maketador"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -336,7 +336,7 @@ msgid "Miguel Sirvent"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://draoomedia.com"
+msgid "https://profiles.wordpress.org/poxtron"
 msgstr ""
 
 #. Template Name of the plugin/theme
