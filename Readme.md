@@ -101,6 +101,10 @@ Create a pull request to the master branch.
 
 ## Changelog ##
 
+### 1.0.2 14/07/2016 ###
+- added with:auto to aliginone class
+- screenshot update
+
 ### 1.0.1 13/07/2016 ###
 - Bug fixes, hard testing, sweat and blood.
 
