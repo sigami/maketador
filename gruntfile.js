@@ -102,6 +102,7 @@ module.exports = function (grunt) {
                     '**',
                     '!node_modules/**',
                     '!bower_components/**',
+                    '!svn/**',
                     '!.gitignore',
                     '!.git'
                 ]
@@ -116,6 +117,7 @@ module.exports = function (grunt) {
                     'dist/**',
                     'bower_components/**',
                     'node_modules/**',
+                    '!svn/**',
                     'languages',
                     '.gitignore',
                     'bower.json',
@@ -184,7 +186,8 @@ module.exports = function (grunt) {
             ],
             dev: [
                 'bower_components/**',
-                'node_modules/**'
+                'node_modules/**',
+                'svn/**'
             ],
             zip: ['../<%= pkg.name %>.zip'],
             test: [
@@ -195,7 +198,7 @@ module.exports = function (grunt) {
             target: {
                 options: {
                     domainPath: 'languages',                   // Where to save the POT file.
-                    exclude: ['node_modules', '.sass-cache', 'bower_components'],// List of files or directories to ignore.
+                    exclude: ['node_modules', '.sass-cache', 'bower_components', 'svn'],// List of files or directories to ignore.
                     include: [],                      // List of files or directories to include.
                     mainFile: 'style.css',                     // Main project file.
                     potComments: '',                  // The copyright at the beginning of the POT file.
@@ -229,7 +232,8 @@ module.exports = function (grunt) {
                     '!.gitignore',
                     '!.git/**',
                     '!bower_components/**',
-                    '!node_modules/**'
+                    '!node_modules/**',
+                    '!svn/**'
                 ]
             }
         }
