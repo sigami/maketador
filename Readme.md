@@ -101,6 +101,11 @@ Create a pull request to the master branch.
 
 ## Changelog ##
 
+### 1.0.3 19/07/2016 ###
+- Improved functionality with infinite scroll
+- New screenshot
+
+
 ### 1.0.2 14/07/2016 ###
 - added with:auto to aliginone class
 - screenshot update

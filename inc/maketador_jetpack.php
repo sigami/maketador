@@ -46,7 +46,9 @@ class Maketador_Jetpack{
 		?>
 		<div id="infinite-footer">
 			<div class="container">
+				<div class="infinite-container">
 				<?php echo apply_filters('maketador_footer_text',Maketador_Customizer::options( 'footer_text' )) ?>
+				</div>
 			</div>
 		</div>
 		<?php

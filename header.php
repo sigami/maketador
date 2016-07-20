@@ -59,7 +59,7 @@ $is_normal_header = ( $header_type == 'normal' );
 		<?php endif; ?>
 
 		<?php echo ( $is_normal_header ) ? '<div class="container">' : '' ?>
-		<nav <?php echo $header_type == 'normal-affix' ? 'id="fixed-nav"' : '' ?> class="navbar navbar-default center <?php echo $is_normal_header ? '' : $header_type == 'normal-affix' ? 'navbar-static-top' : $header_type ?>">
+		<nav <?php echo $header_type == 'normal-affix' ? 'id="fixed-nav"' : '' ?> class="navbar navbar-default <?php echo $is_normal_header ? '' : $header_type == 'normal-affix' ? 'navbar-static-top' : $header_type ?>">
 			<?php echo ( ! $is_normal_header ) ? '<div class="container">' : '' ?>
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"

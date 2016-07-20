@@ -24,6 +24,11 @@ body.admin-bar .navbar-fixed-top{
   }
 }
 
+.site-content {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
 @media screen and ( min-width: 780px ) {
   .site-content {
     min-height: 90vh;//This may need to change according to header size.
@@ -105,17 +110,27 @@ body.admin-bar #fixed-nav.affix{
 }
 
 
-//center navbar
-//TODO Test properly
-.navbar.center .navbar-inner {
-  text-align: center;
+.infinite-container{
+  .container;
 }
 
-.navbar.center .navbar-inner .nav {
-  display:inline-block;
-  float: none;
-  vertical-align: top;
-}
+//NOTE edit  #infinite-footer.container to change style of the footer.
+
+
+
+
+
+//center navbar
+//TODO Test properly
+//.navbar.center .navbar-inner {
+//  text-align: center;
+//}
+//
+//.navbar.center .navbar-inner .nav {
+//  display:inline-block;
+//  float: none;
+//  vertical-align: top;
+//}
 //img[class*='attachment-']{
 //  max-width: 100%;
 //  height: auto;

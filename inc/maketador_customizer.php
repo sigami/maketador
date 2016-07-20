@@ -329,11 +329,11 @@ class Maketador_Customizer {
 			'content_size'     => '8',
 			'sidebar_size'     => '4',
 			'full_width_class' => 'col-sm-10 col-sm-offset-1',
-			'footer_text'      => '<div class="site-info row">
-	<div class="blog-info col-sm-6">
+			'footer_text'      => '<div class="row">
+	<div class="col-sm-6">
 		<a href="' . get_home_url() . '"> ' . get_bloginfo( 'name' ) . ' &copy; ' . date( 'Y' ) . '</a>
 	</div>
-	<div class="blog-credits col-sm-6">
+	<div class="col-sm-6">
 		<a href="http://github.com/sigami/maketador">' . __( 'created with maketador theme', 'maketador' ) . '</a>
 	</div>
 </div>',
