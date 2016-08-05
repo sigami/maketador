@@ -50,6 +50,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   margin-right: 0;
   max-width: 100%;
   height: auto;
+  width: auto;
 }
 
 .aligncenter {
@@ -165,8 +166,13 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
-object, {
+object{
   max-width: 100%;
+}
+
+img.size-full {
+    width: auto;
+    height: auto;
 }
 
 /*--------------------------------------------------------------

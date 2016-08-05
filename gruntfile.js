@@ -141,8 +141,8 @@ module.exports = function (grunt) {
                             "function maketador_child_scripts() {" + "\n" +
                             "   wp_dequeue_style('maketador-style');" + "\n" +
                             "   wp_dequeue_script('maketador-script');" + "\n" +
-                            "   wp_enqueue_style( '" + child_slug + "-style', get_stylesheet_directory_uri() . '/main.min.css'  );" + "\n" +
-                            "   wp_enqueue_script( '" + child_slug + "-script', get_stylesheet_directory_uri() . '/js/main.min.js',array('jquery'),'1.0');" + "\n" +
+                            "   wp_enqueue_style( '" + child_slug + "-style', get_stylesheet_directory_uri() . '/dist/css/main.min.css'  );" + "\n" +
+                            "   wp_enqueue_script( '" + child_slug + "-script', get_stylesheet_directory_uri() . '/dist/js/main.min.js',array('jquery'),'1.0');" + "\n" +
                             "}" + "\n" +
                             "add_action( 'wp_enqueue_scripts', 'maketador_child_scripts',11 );\n";
                     }

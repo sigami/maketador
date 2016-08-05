@@ -24,6 +24,10 @@ body.admin-bar .navbar-fixed-top{
   }
 }
 
+.content-area{
+  width:100%;
+}
+
 .site-content {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
@@ -109,29 +113,24 @@ body.admin-bar #fixed-nav.affix{
   }
 }
 
-
+/* Infinite scroll support */
 .infinite-container{
   .container;
 }
 
-//NOTE edit  #infinite-footer.container to change style of the footer.
+/* Justified Navbar TODO add option on customizer and header. */
+@media (min-width: @screen-sm-min){
+  .nav-justified.navbar-nav {
+    margin: 0 auto;
+    display: table;
+    table-layout: auto;
+    float: none;
+  }
+  .nav-justified.navbar-nav>li {
+    display: table-cell;
+    float: none;
+    text-align: center;
+    width: auto;
 
-
-
-
-
-//center navbar
-//TODO Test properly
-//.navbar.center .navbar-inner {
-//  text-align: center;
-//}
-//
-//.navbar.center .navbar-inner .nav {
-//  display:inline-block;
-//  float: none;
-//  vertical-align: top;
-//}
-//img[class*='attachment-']{
-//  max-width: 100%;
-//  height: auto;
-//}
+  }
+}

@@ -111,4 +111,4 @@ $is_normal_header = ( $header_type == 'normal' );
 		<?php endif; // End header image check. ?>
 	</header>
 	<?php echo is_page_template( 'page-templates/blank-no-container.php' ) ? '' : '<div class="container">'; ?>
-	<div id="content" class="site-content row ">
+	<div id="content" class="site-content row<?php echo is_page_template( 'page-templates/blank-no-container.php' ) ? '-fluid' : ''; ?>">
