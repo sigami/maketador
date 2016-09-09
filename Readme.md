@@ -2,6 +2,8 @@
 
 WordPress theme based on [underscore.me](http://underscores.me/) and [Bootstrap 3](http://getbootstrap.com).
 
+![Maketador](https://raw.githubusercontent.com/sigami/maketador/master/screenshot.png)
+
 ## What makes it different ? ##
 
 ### Principles ###
