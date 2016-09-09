@@ -9,8 +9,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, full-width-template
 Text Domain: maketador
-GitHub Theme URI: http://github.com/sigami/maketador
-GitHub Branch:    master
 */
 
 /*
@@ -20,8 +18,8 @@ Create a child theme using Node.js you will need to have bower and grunt-cli ins
 1 cd maketador/
 2 npm install && bower install
 3 grunt child --slug=new_theme --name="My new Theme !"
-4 cd ../new_theme
-5 npm install && bower install
+4 grunt clean:dev
+5 cd ../new_theme
 6 grunt dev
 7 ENJOY
 

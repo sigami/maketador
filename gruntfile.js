@@ -117,7 +117,6 @@ module.exports = function (grunt) {
                     'dist/**',
                     'bower_components/**',
                     'node_modules/**',
-                    '!svn/**',
                     'languages',
                     '.gitignore',
                     'bower.json',
@@ -231,6 +230,7 @@ module.exports = function (grunt) {
                     '**',
                     '!.gitignore',
                     '!.git/**',
+                    '!.idea/**',
                     '!bower_components/**',
                     '!node_modules/**',
                     '!svn/**'
@@ -294,19 +294,25 @@ module.exports = function (grunt) {
         grunt.config.set('watch',{
             test: {
                 files: ['<%= copy.test.src  %>'],
-                tasks: ['copy:test']
+                tasks: ['clean:js_css',
+                    'less',
+                    'concat',
+                    'uglify','copy:test']
             },
             livereload: live
         });
 
-        grunt.task.run(['clean:test','copy:test','watch']);
+        grunt.task.run([
+            'clean:test',
+            'copy:test',
+            'watch']);
 
     });
 
     grunt.registerTask('zip', [
         'build',
         'clean:zip',
-        'compress'
+        'compress:theme'
     ]);
 
     grunt.registerTask('child', [
@@ -315,4 +321,6 @@ module.exports = function (grunt) {
         'copy:child_style',
         'copy:child_functions'
     ]);
+
+    grunt.loadTasks("../grunt-helpers");
 };

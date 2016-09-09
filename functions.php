@@ -177,6 +177,13 @@ foreach ( $includes as $include ) {
 	/** @noinspection PhpIncludeInspection */
 	require( locate_template( $include ) );
 }
+/** @noinspection PhpIncludeInspection */
+require(locate_template('inc/updater.php'));
+
+new ThemeUpdateChecker(
+    'maketador', //Theme slug. Usually the same as the name of its directory.
+    'https://draoomedia.com/update-api/?action=get_metadata&slug=maketador&site_installed=https://sigami.net/' //Metadata URL.
+);
 
 Sigami_Maketador::hooks();
 Maketador_Jetpack::hooks();

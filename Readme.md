@@ -14,7 +14,9 @@ WordPress theme based on [underscore.me](http://underscores.me/) and [Bootstrap 
 - Do not reinvent the wheel
 - Lightweight
 
-### Specs ##
+This theme is hosted by [DraooMedia](https://draoomedia.com) it will get auto updated.
+
+### Specifications ##
 
 - Customizer options
   - Header :
@@ -53,23 +55,19 @@ To get the juice out of this code you will need to have [Node.js](https://nodejs
 
 Also bower and grunt-cli installed globally.
 
-Using grunt is just mind blowing. 
+### Building the theme ###
 
-If you are not using it, you are missing out on some incredible powers.
-
-
-### Builder settings ###
-
-1. Go to builder path `cd maketador/`
-2. Run `npm install`
-3. Run `bower install`
-4. Modify `inc/less/main.less` or `inc/less/botswatch.less` to your needs
-5. Add extra scripts if necessary on `inc/js`
-6. Run `grunt build`
+1. Go to the theme path `maketador/`
+1. Run `npm install && bower install `
+1. Modify `inc/less/_botswatch.less` to your needs
+1. Add extra scripts if necessary on `inc/js` add them to the grunt file to concatenate on the right order
+1. Run `grunt build`
 
 Use `grunt watch` to watch changes on files and auto reload browser very useful if your are developing on a local server.
 
-To automatically copy your changes to a test folder or add font awesome to your theme first create a **variables.json** file like this:
+### Font Awesome ###
+
+To include the font library simply create a variables.json and set fa_include to true just like in the examples below
 
 ``````json
 {
@@ -78,14 +76,15 @@ To automatically copy your changes to a test folder or add font awesome to your 
 }
 ``````
 
-Then ese `grunt dev` copy all changed files to your test folder and reload the browser
+The test dir is a folder on your computer where the complete theme will get stored if you use the command `grunt dev` 
+on every change it will copy the theme with only the important files
 
 Use `grunt zip` to create a zip file with only the essential. Use that file to upload the theme via wp-admin.
   
   
 ### Created for Child Themes ###
 
-Why create new themes all the time if child themes exists since year 0.
+Why create new themes all the time if child themes exists since year 1.
 
 Create a child theme using grunt
 
@@ -100,6 +99,15 @@ use `grunt clean:dev` to remove the bower_components and node_modules folder.
 Create a pull request to the master branch.
 
 ## Changelog ##
+
+### 1.0.5 09/08/2016 ###
+- Improved css
+- Improved template files
+- New screenshot
+
+### 1.0.4 31/07/2016 ###
+- Stopped trying to upload this theme to the official repo.
+- Added custom update api.
 
 ### 1.0.3 19/07/2016 ###
 - Improved functionality with infinite scroll
