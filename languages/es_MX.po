@@ -2,137 +2,137 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Maketador 1.0.5\n"
+"Project-Id-Version: Maketador 1.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-06-24 00:21:43+00:00\n"
+"POT-Creation-Date: 2016-09-27 14:01-0500\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Miguel Sirvent <miguel@sigami.net>\n"
+"PO-Revision-Date: 2016-09-27 15:51-0500\n"
 "Language-Team: Miguel Sirvent <miguel@sigami.net>\n"
-"X-Generator: grunt-wp-i18n 0.5.4\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
-"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
-"Language: en\n"
+"X-Generator: Poedit 1.8.9\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Country: United States\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-Wpheader: style.css\n"
+"Last-Translator: Miguel Sirvent <miguel.sirvent@gmail.com>\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "¡Ups! Esa página no se ha podido encontrar."
 
 #: 404.php:22
 msgid ""
-"It looks like nothing was found at this location. Maybe try one of the "
-"links below or a search?"
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
+"Parece que no se ha encontrado lo que busca en este lugar. Puedes tratar una "
+"nueva búsqueda"
 
 #: comments.php:67
 msgid "Comments are closed."
-msgstr ""
+msgstr "Los comentarios están cerrados."
 
 #: comments.php:71
 msgid "Review this product"
-msgstr ""
+msgstr "Opina sobre este producto"
 
 #: comments.php:71
 msgid "Leave a Reply"
-msgstr ""
+msgstr "Deja una respuesta"
 
 #: comments.php:73
 msgid "Review"
-msgstr ""
+msgstr "Revisión"
 
 #: comments.php:73
 msgid "Reply"
-msgstr ""
+msgstr "Replica"
 
 #: comments.php:76
 msgid "Your Comment Here..."
-msgstr ""
+msgstr "Tu comentario aquí..."
 
 #: functions.php:60
 msgid "Primary"
-msgstr ""
+msgstr "Primario"
 
 #: functions.php:111
 msgid "Sidebar"
-msgstr ""
+msgstr "Barra Lateral"
 
 #: functions.php:113 functions.php:123
 msgid "Add widgets here."
-msgstr ""
+msgstr "Añadir widgets aquí."
 
 #: functions.php:121
 msgid "Footer Sidebar"
-msgstr ""
+msgstr "Barra Lateral del Pie de Página"
 
 #: header.php:28
 msgid "Skip to content"
-msgstr ""
+msgstr "Saltar al contenido"
 
 #: inc/maketador_bootstrap.php:86
 msgid ""
-"This post is password protected. To view it please enter your password "
-"below:"
+"This post is password protected. To view it please enter your password below:"
 msgstr ""
+"Esta entrada está protegida por contraseña. Para verla introduce tu "
+"contraseña."
 
 #: inc/maketador_bootstrap.php:90
 msgid "Password"
-msgstr ""
+msgstr "Contraseña"
 
 #: inc/maketador_bootstrap.php:92
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: inc/maketador_bootstrap.php:177
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: inc/maketador_bootstrap.php:181
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Tu comentario est&aacute; esperando ser moderado"
 
 #: inc/maketador_bootstrap.php:211
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: inc/maketador_bootstrap.php:212 inc/maketador_bootstrap.php:225
 msgid "required"
-msgstr ""
+msgstr "requerido"
 
 #: inc/maketador_bootstrap.php:218
 msgid "Your Name"
-msgstr ""
+msgstr "Tú nombre"
 
 #: inc/maketador_bootstrap.php:224
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: inc/maketador_bootstrap.php:231
 msgid "Your Email"
-msgstr ""
+msgstr "Tu Email"
 
 #: inc/maketador_bootstrap.php:234
 msgid "will not be published"
-msgstr ""
+msgstr "No será publicado"
 
 #: inc/maketador_bootstrap.php:237
 msgid "Website"
-msgstr ""
+msgstr "Sitio Web"
 
 #: inc/maketador_bootstrap.php:243
 msgid "Your Website"
-msgstr ""
+msgstr "Tu sitio web"
 
 #. Theme Name of the plugin/theme
 msgid "Maketador"
@@ -140,185 +140,193 @@ msgstr ""
 
 #: inc/maketador_customizer.php:63
 msgid "Theme specific options"
-msgstr ""
+msgstr "Opciones específicas del tema"
 
 #: inc/maketador_customizer.php:70
 msgid "Header"
-msgstr ""
+msgstr "Cabecera"
 
 #: inc/maketador_customizer.php:73
 msgid "Choose header type, colors, etc."
-msgstr ""
+msgstr "Elegir tipo de cabecera, colores, etc.."
 
 #: inc/maketador_customizer.php:100
 msgid "Header Type"
-msgstr ""
+msgstr "Tipo de Encabezado"
 
 #: inc/maketador_customizer.php:105
 msgid "Static"
-msgstr ""
+msgstr "Estático"
 
 #: inc/maketador_customizer.php:106
 msgid "Fixed"
-msgstr ""
+msgstr "Fijo"
 
 #: inc/maketador_customizer.php:107
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: inc/maketador_customizer.php:108
 msgid "Normal then fixed navbar"
-msgstr ""
+msgstr "Normal después estático"
 
 #: inc/maketador_customizer.php:118
 msgid "Logo Image"
-msgstr ""
+msgstr "Imágen del logo"
 
 #: inc/maketador_customizer.php:129
 msgid "Layout"
-msgstr ""
+msgstr "Maquetación"
 
 #: inc/maketador_customizer.php:132
 msgid "Layout options"
-msgstr ""
+msgstr "Opciones de maquetación"
 
 #: inc/maketador_customizer.php:149
 msgid "Layout Type"
-msgstr ""
+msgstr "Tipo de Layout"
 
 #: inc/maketador_customizer.php:154
 msgid "Content Sidebar"
-msgstr ""
+msgstr "Contenido luego sidebar"
 
 #: inc/maketador_customizer.php:155
 msgid "Sidebar Content"
-msgstr ""
+msgstr "Sidbar luego contenido"
 
 #: inc/maketador_customizer.php:156
 msgid "No Sidebar"
-msgstr ""
+msgstr "Sin Sidebar"
 
 #: inc/maketador_customizer.php:175
 msgid "Content Size"
-msgstr ""
+msgstr "Tamaño del contenido"
 
 #: inc/maketador_customizer.php:196
 msgid "Sidebar Size"
-msgstr ""
+msgstr "Tamaño del sidebar"
 
 #: inc/maketador_customizer.php:217
 msgid "Full width class"
-msgstr ""
+msgstr "css class de ancho completo"
 
 #: inc/maketador_customizer.php:227
 msgid "Footer"
-msgstr ""
+msgstr "Pie de página"
 
 #: inc/maketador_customizer.php:230
 msgid "Footer options"
-msgstr ""
+msgstr "Opciones del pie de página"
 
 #: inc/maketador_customizer.php:247
 msgid "Footer Text"
-msgstr ""
+msgstr "Texto de pie de página"
 
 #: inc/maketador_customizer.php:337
 msgid "created with maketador theme"
-msgstr ""
+msgstr "creado con tema maketador"
 
-#: inc/template-tags.php:50 inc/template-tags.php:56
 #. translators: used between list items
+#: inc/template-tags.php:50 inc/template-tags.php:56
 msgid ","
 msgstr ""
 
 #: inc/template-tags.php:52
 msgid "Posted in %1$s"
-msgstr ""
+msgstr "Posteado en %1$s"
 
 #: inc/template-tags.php:58
 msgid "Tagged %1$s"
-msgstr ""
+msgstr "Etiquetado como %1$s"
 
-#: inc/template-tags.php:65
 #. translators: %s: post title
+#: inc/template-tags.php:65
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
+msgstr "Deja un Comentario<span class=\"screen-reader-text\"> en %s</span>"
 
-#: inc/template-tags.php:117
 #. translators: %s: Name of current post
+#: inc/template-tags.php:117
 msgid "%s Edit %s"
-msgstr ""
+msgstr "%s Editar %s"
 
 #: inc/wp_bootstrap_pagination.php:23
 msgid "Pages:"
-msgstr ""
+msgstr "Páginas:"
 
 #: inc/wp_bootstrap_pagination.php:48
 msgid "Post navigation"
-msgstr ""
+msgstr "Navegación del artículo"
 
 #: inc/wp_bootstrap_pagination.php:71
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: inc/wp_bootstrap_pagination.php:72
 msgid "Next"
-msgstr ""
+msgstr "Siguiente"
 
 #: inc/wp_bootstrap_pagination.php:74
 msgid "First"
-msgstr ""
+msgstr "Primero"
 
 #: inc/wp_bootstrap_pagination.php:76
 msgid "Last"
-msgstr ""
+msgstr "Último"
 
 #: inc/wp_bootstrap_pagination.php:153
 msgid "Comment navigation"
-msgstr ""
+msgstr "Navegación de Comentarios"
 
 #: inc/wp_bootstrap_pagination.php:154
 msgid "Newer Comments %s"
-msgstr ""
+msgstr "Nuevos comentarios de %s"
 
 #: inc/wp_bootstrap_pagination.php:156
 msgid "%s Older Comments"
-msgstr ""
+msgstr "%s comentarios antiguos"
 
 #: search.php:15
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Resultados de búsqueda para: %s"
 
 #: searchform.php:4 searchform.php:6
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
-msgstr ""
+msgstr "Nada Encontrado"
 
 #: template-parts/content-none.php:21
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"¿Listo para publicar tu primera entrada? <a href=“%1$s”> Empieza aquí</a>."
 
 #: template-parts/content-none.php:25
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Lo sentimos, pero nada coincide con los términos de búsqueda. Por favor, "
+"inténtalo de nuevo con algunas palabras clave diferentes."
 
 #: template-parts/content-none.php:31
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"No podemos encontrar lo que estás buscando, intenta realizar una búsqueda "
+"para obtener mejores resultados."
 
-#: template-parts/content.php:34
 #. translators: %s: Name of current post.
+#: template-parts/content.php:34
 msgid ""
 "Continue reading %s <span class=\"meta-nav\"><span class=\"glyphicon "
 "glyphicon-chevron-right\" aria-hidden=\"true\"></span><\t/span>"
 msgstr ""
+"Sigue leyendo %s <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-"
+"chevron-right\" aria-hidden=\"true\"></span><\t/span>"
 
 #. Theme URI of the plugin/theme
 msgid "https://github.com/sigami/maketador"
@@ -327,9 +335,12 @@ msgstr ""
 #. Description of the plugin/theme
 msgid ""
 "Bootstrap theme with multiple header types and Jetpack infinite scroll "
-"compatibility. Use grunt to create child themes. Know more about it <a "
-"href=\"http://github.com/sigami/maketador\">Here</a>"
+"compatibility. Use grunt to create child themes. Know more about it <a href="
+"\"http://github.com/sigami/maketador\">Here</a>"
 msgstr ""
+"Tema de arranque con múltiples tipos de cabecera y compatibilidad con "
+"Jetpack infinit scroll. Utilice grunt para crear temas hijos. Sabe más de el "
+"<a href=\"http://github.com/sigami/maketador\">aquí</a>"
 
 #. Author of the plugin/theme
 msgid "Miguel Sirvent"
@@ -341,33 +352,33 @@ msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Blank no container"
-msgstr ""
+msgstr "En blanco - Sin contenedor"
 
 #. Template Name of the plugin/theme
 msgid "Blank"
-msgstr ""
+msgstr "En blanco - Con contenedor"
 
 #. Template Name of the plugin/theme
 msgid "Full Width"
-msgstr ""
+msgstr "Anchura completa"
 
 #. Template Name of the plugin/theme
 msgid "Inverse Layout"
-msgstr ""
+msgstr "Maquetación inversa"
 
 #: comments.php:31
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Un pensamiento en &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s pensamientos en &ldquo;%2$s&rdquo;"
 
 #: inc/template-tags.php:28
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr ""
+msgstr "Publicado el %s"
 
 #: inc/template-tags.php:33
 msgctxt "post author"
 msgid "by %s"
-msgstr ""
+msgstr "por %s"

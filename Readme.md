@@ -48,12 +48,12 @@ This theme is hosted by [DraooMedia](https://draoomedia.com) it will get auto up
   - maketador_banner 1200x500 px
 - All options are accessible on customizer and saved on theme_mod 
 - Child Theme for replacing all files   
-- Right to left support [bootstrap-rtl](http://github.com/morteza)
+- Right to left support [bootstrap-rtl](https://github.com/morteza/bootstrap-rtl)
   
 
 ## Developer guide ##
 
-To get the juice out of this code you will need to have [Node.js](https://nodejs.org/en/) installed on your system.
+To get the juice out of this code you will need to have [Node.js](https://nodejs.org) installed on your system.
 
 Also bower and grunt-cli installed globally.
 

@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area ">
 		<br>
-		<main id="main" class="site-main jumbotron panel panel-danger text-center" role="main">
+		<main id="main" class="site-main panel panel-danger text-center" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -23,11 +23,11 @@ get_header(); ?>
 					<?php
 						get_search_form();
 					?>
-				</div><
+				</div>
 			</section>
 
 		</main>
-	</div><
+	</div>
 
 <?php
 get_footer();
