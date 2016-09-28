@@ -13,7 +13,7 @@ get_header(); ?>
 		<br>
 		<main id="main" class="site-main panel panel-danger text-center" role="main">
 
-			<section class="error-404 not-found">
+			<section class="not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'maketador' ); ?></h1>
 				</header>
@@ -24,6 +24,7 @@ get_header(); ?>
 						get_search_form();
 					?>
 				</div>
+				<br>
 			</section>
 
 		</main>

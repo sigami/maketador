@@ -29,7 +29,6 @@
 		<?php endif; ?>
 		<?php echo apply_filters('maketador_footer_text',Maketador_Customizer::options( 'footer_text' )) ?>
 		</div>
-		</div>
 	</footer>
 </div>
 
