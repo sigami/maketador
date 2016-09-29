@@ -218,7 +218,24 @@ module.exports = function (grunt) {
                 }
             }
         },
-
+        sync: {
+            test: {
+                files: [{
+                    //cwd: '<%= pkg.name %>/',
+                    src: [
+                        '**',
+                        '!node_modules/**',
+                        '!bower_components/**',
+                        '!svn/**',
+                        '!.gitignore',
+                        '!.git'
+                    ] ,
+                    dest: '<%= vars.test_dir %>'
+                }],
+                // pretend: true, // Don't do any IO. Before you run the task with `updateAndDelete` PLEASE MAKE SURE it doesn't remove too much.
+                verbose: true // Display log messages when copying files
+            }
+        },
         compress: {
             theme: {
                 options: {
@@ -248,6 +265,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-wp-i18n');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-sync');
 
     grunt.loadNpmTasks('grunt-contrib-compress');
 
@@ -290,21 +308,47 @@ module.exports = function (grunt) {
 
     grunt.registerTask('dev',function(){
 
-        var live = grunt.config.get('watch.livereload');
+        // var live = grunt.config.get('watch.livereload');
         grunt.config.set('watch',{
-            test: {
-                files: ['<%= copy.test.src  %>'],
-                tasks: ['clean:js_css',
-                    'less',
-                    'concat',
-                    'uglify','copy:test']
+            less: {
+                files: [
+                    'bower_components/bootstrap/less/*.less',
+                    //'bower_components/font-awesome/less/*.less',
+                    'inc/less/*.less'
+                ],
+                tasks: ['less','sync:test']
             },
-            livereload: live
+            js: {
+                files: [
+                    '<%= jshint.all %>'
+                ],
+                tasks: ['jshint', 'concat', 'uglify', 'sync:test']
+            },
+            php: {
+                files: [
+                    '*.php',
+                    'inc/*.php',
+                    'page-templates/*.php',
+                    'template-parts/*.php'
+                ],
+                tasks: ['sync:test']
+            },
+            livereload: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    'dist/**',
+                    '*.php',
+                    'inc/js/*.js',
+                    'inc/*.php'
+                ]
+            }
+            // livereload: live
         });
 
         grunt.task.run([
-            'clean:test',
-            'copy:test',
+            'sync:test',
             'watch']);
 
     });
