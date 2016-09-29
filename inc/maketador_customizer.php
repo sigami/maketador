@@ -429,5 +429,16 @@ class Maketador_Customizer {
 		return false;
 	}
 
+	static function get_full_width_class($post_id=null){
+		if($post_id === null){
+			$post_id = get_queried_object_id();
+		}
+		$full_width_class = get_post_meta($post_id,'_maketador_full_width_class',true);
+		if(empty($full_width_class)){
+			$full_width_class = self::options( 'full_width_class' );
+		}
+		return $full_width_class;
+	}
+
 }
 

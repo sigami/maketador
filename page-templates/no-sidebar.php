@@ -3,9 +3,8 @@
  * Template Name: No Sidebar
  * @package maketador
  */
-
 get_header(); ?>
-	<div id="primary" class="content-area <?php echo Maketador_Customizer::options( 'full_width_class' )  ?>">
+	<div id="primary" class="content-area <?php echo Maketador_Customizer::get_full_width_class() ?>">
 		<main id="main" class="site-main" role="main">
 
 			<?php
@@ -23,6 +22,5 @@ get_header(); ?>
 
 		</main>
 	</div>
-
 <?php
 get_footer();

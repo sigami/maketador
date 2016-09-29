@@ -18,8 +18,7 @@ $is_normal_header = ( $header_type == 'normal' ) || ( $header_type == 'normal-af
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
-		<?php if ( !empty($pingback) ) : ?>
-			<link rel="pingback" href="<?php echo $pingback ?>"><?php endif; ?>
+		<?php if ( !empty($pingback) ) : ?><link rel="pingback" href="<?php echo $pingback ?>"><?php endif; ?>
 		<?php wp_head(); ?>
 	</head>
 <body <?php body_class(); ?>>

@@ -213,8 +213,8 @@ module.exports = function (grunt) {
                     },                                // Headers to add to the generated POT file.
                     processPot: null,                 // A callback function for manipulating the POT file.
                     type: 'wp-theme',                // Type of project (wp-plugin or wp-theme).
-                    updateTimestamp: false,            // Whether the POT-Creation-Date should be updated without other changes.
-                    updatePoFiles: false              // Whether to update PO files in the same directory as the POT file.
+                    updateTimestamp: true,            // Whether the POT-Creation-Date should be updated without other changes.
+                    updatePoFiles: true              // Whether to update PO files in the same directory as the POT file.
                 }
             }
         },
@@ -303,7 +303,8 @@ module.exports = function (grunt) {
         'uglify',
         'copy:rtl',
         'copy:bs_fonts',
-        'makepot'
+        'makepot',
+        'copy_es'
     ]);
 
     grunt.registerTask('dev',function(){
@@ -348,6 +349,7 @@ module.exports = function (grunt) {
         });
 
         grunt.task.run([
+            'default',
             'sync:test',
             'watch']);
 
@@ -365,6 +367,22 @@ module.exports = function (grunt) {
         'copy:child_style',
         'copy:child_functions'
     ]);
+
+    grunt.registerTask('copy_es',function(){
+        grunt.config.set('copy',{
+            options: {force: true},
+            es_mx: {
+                src: 'languages/es_ES.po',
+                dest: 'languages/es_MX.po'
+            },
+            es_mx_mo: {
+                src: 'languages/es_ES.mo',
+                dest: 'languages/es_MX.mo'
+            },
+        });
+        grunt.task.run([
+            'copy']);
+    });
 
     grunt.loadTasks("../grunt-helpers");
 };
