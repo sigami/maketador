@@ -36,9 +36,5 @@ $is_normal_header = ( $header_type == 'normal' ) || ( $header_type == 'normal-af
 		?>
 	</header>
 
-<?php if ( is_page_template( 'page-templates/fluid-row.php' ) ): ?>
-	<div id="content" class="site-content row-fluid">
-<?php else : ?>
-	<div class="container">
-	<div id="content" class="site-content row">
-<?php endif; ?>
+	<div class="container<?php echo is_page_template( 'page-templates/fluid-row.php' ) ? '-fluid':'' ?>">
+		<div id="content" class="site-content row">

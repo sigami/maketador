@@ -9,10 +9,10 @@
  * @package maketador
  */
 ?>
-	</div><?php //#content ?>
-	<?php echo is_page_template( 'page-templates/fluid-row.php' ) ? '' : '</div>'; //.container ?>
+		</div><?php //#content ?>
+	</div><?php //.container ?>
 <?php
-if(  ! Maketador_Customizer::hide_footer() ): ?>
+if ( ! Maketador_Customizer::hide_footer() ): ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 			<?php if ( is_active_sidebar( 'sidebar-footer' ) ): ?>
