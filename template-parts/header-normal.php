@@ -31,9 +31,10 @@ $header_image = get_header_image();
 		</div>
 	</div>
 </div>
-<div class="container">
+<?php echo $header_type !== 'normal-affix' ? '<div class="container">' : '' ?>
 	<nav <?php echo $header_type == 'normal-affix' ? 'id="fixed-nav"' : '' ?>
 		class="navbar navbar-default <?php echo $header_type == 'normal-affix' ? 'navbar-static-top' : $header_type ?>">
+		<?php echo $header_type == 'normal-affix' ? '<div class="container">' : '' ?>
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse"
 			        data-target="#maketador_navbar">
@@ -56,6 +57,7 @@ $header_image = get_header_image();
 			)
 		);
 		?>
+		<?php echo $header_type == 'normal-affix' ? '</div>' : '' ?>
 	</nav>
-</div>
+<?php echo $header_type !== 'normal-affix' ? '</div>' : '' ?>
 </header>
