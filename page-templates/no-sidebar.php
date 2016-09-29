@@ -1,10 +1,11 @@
 <?php
 /**
- * Template Name: Inverse Layout
+ * Template Name: No Sidebar
  * @package maketador
  */
+
 get_header(); ?>
-	<div id="primary" class="content-area <?php Maketador_Customizer::primary_div_class() ?>">
+	<div id="primary" class="content-area <?php echo Maketador_Customizer::options( 'full_width_class' )  ?>">
 		<main id="main" class="site-main" role="main">
 
 			<?php
@@ -24,5 +25,4 @@ get_header(); ?>
 	</div>
 
 <?php
-get_sidebar();
 get_footer();

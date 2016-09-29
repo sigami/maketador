@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Blank no container
+ * Template Name: Fluid Row
  * @package maketador
  */
 get_header(); ?>

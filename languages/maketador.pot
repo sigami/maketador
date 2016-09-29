@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Maketador 1.0.6\n"
+"Project-Id-Version: Maketador 1.0.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
 "POT-Creation-Date: 2016-06-24 00:21:43+00:00\n"
 "MIME-Version: 1.0\n"
@@ -60,23 +60,23 @@ msgstr ""
 msgid "Your Comment Here..."
 msgstr ""
 
-#: functions.php:60
+#: functions.php:61
 msgid "Primary"
 msgstr ""
 
-#: functions.php:111
+#: functions.php:112
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:113 functions.php:123
+#: functions.php:114 functions.php:124
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:121
+#: functions.php:122
 msgid "Footer Sidebar"
 msgstr ""
 
-#: header.php:28
+#: header.php:27
 msgid "Skip to content"
 msgstr ""
 
@@ -194,7 +194,7 @@ msgstr ""
 msgid "Sidebar Content"
 msgstr ""
 
-#: inc/maketador_customizer.php:156
+#. Template Name of the plugin/theme
 msgid "No Sidebar"
 msgstr ""
 
@@ -226,6 +226,26 @@ msgstr ""
 msgid "created with maketador theme"
 msgstr ""
 
+#: inc/page-metabox.php:7
+msgid "Hide Title"
+msgstr ""
+
+#: inc/page-metabox.php:8
+msgid "Show Date"
+msgstr ""
+
+#: inc/page-metabox.php:9
+msgid "Hide Header"
+msgstr ""
+
+#: inc/page-metabox.php:10
+msgid "Hide Footer"
+msgstr ""
+
+#: inc/page-metabox.php:20
+msgid "Page Options"
+msgstr ""
+
 #: inc/template-tags.php:50 inc/template-tags.php:56
 #. translators: used between list items
 msgid ","
@@ -244,7 +264,7 @@ msgstr ""
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/template-tags.php:117
+#: inc/template-tags.php:144
 #. translators: %s: Name of current post
 msgid "%s Edit %s"
 msgstr ""
@@ -340,19 +360,11 @@ msgid "https://profiles.wordpress.org/poxtron"
 msgstr ""
 
 #. Template Name of the plugin/theme
-msgid "Blank no container"
+msgid "Fluid Row"
 msgstr ""
 
 #. Template Name of the plugin/theme
-msgid "Blank"
-msgstr ""
-
-#. Template Name of the plugin/theme
-msgid "Full Width"
-msgstr ""
-
-#. Template Name of the plugin/theme
-msgid "Inverse Layout"
+msgid "Inverse Sidebar"
 msgstr ""
 
 #: comments.php:31
@@ -362,7 +374,7 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/template-tags.php:28
+#: inc/template-tags.php:28 inc/template-tags.php:120
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Main theme class most functions come from underscore.me, also includes all necessary files.
  *
@@ -139,7 +140,7 @@ class  Sigami_Maketador {
 	}
 
 	static function admin_init() {
-		add_editor_style( get_stylesheet_directory_uri().'/dist/css/main.min.css' );
+		add_editor_style( get_stylesheet_directory_uri() . '/dist/css/main.min.css' );
 	}
 
 	static function image_size_names_choose( $sizes ) {
@@ -153,6 +154,7 @@ class  Sigami_Maketador {
 		return $new_sizes;
 	}
 }
+
 /**
  * Include all theme files with child theme support.
  *
@@ -165,30 +167,32 @@ class  Sigami_Maketador {
  * Bootstrap Pagination support.
  */
 $includes = array(
-'/inc/extras.php',
-'/inc/maketador_bootstrap.php',
-'/inc/maketador_customizer.php',
-'/inc/maketador_jetpack.php',
-'/inc/template-tags.php',
-'/inc/wp-bootstrap-navwalker.php',
-'/inc/wp_bootstrap_pagination.php',
+	'/inc/extras.php',
+	'/inc/maketador_bootstrap.php',
+	'/inc/maketador_customizer.php',
+	'/inc/maketador_jetpack.php',
+	'/inc/template-tags.php',
+	'/inc/wp-bootstrap-navwalker.php',
+	'/inc/page-metabox.php',
+	'/inc/wp_bootstrap_pagination.php'
 );
 foreach ( $includes as $include ) {
 	/** @noinspection PhpIncludeInspection */
 	require( locate_template( $include ) );
 }
 /** @noinspection PhpIncludeInspection */
-require(locate_template('inc/updater.php'));
+require( locate_template( 'inc/updater.php' ) );
 
 new ThemeUpdateChecker(
-    'maketador', //Theme slug. Usually the same as the name of its directory.
-    'https://draoomedia.com/update-api/?action=get_metadata&slug=maketador&site_installed=https://sigami.net/' //Metadata URL.
+	'maketador', //Theme slug. Usually the same as the name of its directory.
+	'https://draoomedia.com/update-api/?action=get_metadata&slug=maketador&site_installed=https://sigami.net/' //Metadata URL.
 );
 
 Sigami_Maketador::hooks();
 Maketador_Jetpack::hooks();
 Maketador_Bootstrap::hooks();
 Maketador_Customizer::hooks();
+Maketador_Page_Metabox::hooks();
 wp_boostrap_pagination::hooks();
 
 

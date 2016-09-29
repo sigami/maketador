@@ -380,7 +380,7 @@ class Maketador_Customizer {
 		$sidebar_size = self::options( 'sidebar_size' );
 		$layout       = self::options( 'layout_type' );
 		if ( is_active_sidebar( 'sidebar-1' ) && ( $layout !== 'no-sidebar' ) ) {
-			$inverse_layout = is_page_template( 'page-templates/inverse-layout.php' );
+			$inverse_layout = is_page_template( 'page-templates/inverse-sidebar.php' );
 			if ( $inverse_layout ) {
 				if ( $layout == 'content-sidebar' ) {
 					$classes = "col-sm-$content_size col-sm-push-$sidebar_size";
@@ -404,7 +404,7 @@ class Maketador_Customizer {
 		$content_size   = self::options( 'content_size' );
 		$sidebar_size   = self::options( 'sidebar_size' );
 		$layout         = self::options( 'layout_type' );
-		$inverse_layout = is_page_template( 'page-templates/inverse-layout.php' );
+		$inverse_layout = is_page_template( 'page-templates/inverse-sidebar.php' );
 		$classes        = "col-sm-$sidebar_size";
 		if ( ( $layout == 'sidebar-content' ) && ( ! $inverse_layout ) ) {
 			$classes .= " col-sm-pull-$content_size";
@@ -412,6 +412,21 @@ class Maketador_Customizer {
 			$classes .= " col-sm-pull-$content_size";
 		}
 		echo $classes;
+	}
+
+	static function hide_header(){
+		if(!is_page())
+			return false;
+		if(get_post_meta(get_queried_object_id(),'_maketador_hide_header',true) == 'on')
+			return true;
+		return false;
+	}
+	static function hide_footer(){
+		if(!is_page())
+			return false;
+		if(get_post_meta(get_queried_object_id(),'_maketador_hide_footer',true) == 'on')
+			return true;
+		return false;
 	}
 
 }
