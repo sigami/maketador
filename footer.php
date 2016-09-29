@@ -10,7 +10,7 @@
  */
 ?>
 	</div><?php //#content ?>
-	<?php echo is_page_template( 'page-templates/fluid-row.php' ) ? '' : '</div>'; //.container ?>
+	<?php echo !is_page_template( 'page-templates/fluid-row.php' ) ? '' : '</div>'; //.container ?>
 <?php
 if(  ! Maketador_Customizer::hide_footer() ): ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
