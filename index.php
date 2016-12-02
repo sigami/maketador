@@ -38,7 +38,7 @@ get_header(); ?>
 			endwhile;
 			if ( ! ( ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) ) ) ) {
 				//the_posts_navigation();
-				wp_boostrap_pagination::numeric();
+				wp_bootsrap_pagination::numeric();
 			} else {
 
 			}

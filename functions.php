@@ -193,6 +193,6 @@ Maketador_Jetpack::hooks();
 Maketador_Bootstrap::hooks();
 Maketador_Customizer::hooks();
 Maketador_Page_Metabox::hooks();
-wp_boostrap_pagination::hooks();
+wp_bootsrap_pagination::hooks();
 
 

@@ -1,12 +1,12 @@
 <?php
 /**
- * Class Name: wp_boostrap_pagination
- * GitHub URI: https://github.com/sigami/wp_boostrap_pagination
+ * Class Name: wp_bootsrap_pagination
+ * GitHub URI: https://github.com/sigami/wp_bootsrap_pagination
  * Description: Cover all types of pagination within wordpress link pages, numeric archives and posts
- * Version: 1.0
+ * Version: 1.1
  * Author: Miguel Sirvent
  */
-class  wp_boostrap_pagination {
+class  wp_bootsrap_pagination {
 	static function hooks() {
 		/** wp page links */
 		add_filter( 'wp_link_pages_args', __CLASS__ . '::wp_link_pages_args' );

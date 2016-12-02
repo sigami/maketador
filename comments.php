@@ -37,7 +37,7 @@ if ( post_password_required() ) {
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 			<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-			<?php wp_boostrap_pagination::comments_simple() ?>
+			<?php wp_bootsrap_pagination::comments_simple() ?>
 			</nav><!-- #comment-nav-above -->
 		<?php endif; ?>
 
@@ -53,7 +53,7 @@ if ( post_password_required() ) {
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 			<?php //paginate_comments_links(); TODO ?>
 			<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-				<?php wp_boostrap_pagination::comments_simple() ?>
+				<?php wp_bootsrap_pagination::comments_simple() ?>
 			</nav><!-- #comment-nav-below -->
 			<?php
 		endif; // Check for comment navigation.
