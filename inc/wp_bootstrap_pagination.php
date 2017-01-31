@@ -3,7 +3,7 @@
  * Class Name: wp_bootsrap_pagination
  * GitHub URI: https://github.com/sigami/wp_bootsrap_pagination
  * Description: Cover all types of pagination within wordpress link pages, numeric archives and posts
- * Version: 1.1
+ * Version: 1.2
  * Author: Miguel Sirvent
  */
 class  wp_bootsrap_pagination {
@@ -65,7 +65,7 @@ class  wp_bootsrap_pagination {
 		echo $navigation;
 	}
 
-	static function numeric( $args = array()) {
+	static function numeric( $args = array() ) {
 
 		$args = wp_parse_args( $args, array(
 			'prev_text'        => '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>' . __( 'Previous', 'maketador' ),
@@ -80,7 +80,7 @@ class  wp_bootsrap_pagination {
 			'query'            => null,
 		) );
 		if ( $args['query'] instanceof WP_Query ) {
-			$wp_query =  $args['query'];
+			$wp_query = $args['query'];
 		} else {
 			global $wp_query;
 		}
@@ -135,7 +135,7 @@ class  wp_bootsrap_pagination {
 			}
 		}
 		echo '<li class="">';
-		next_posts_link( $args['next_text'] );
+		next_posts_link( $args['next_text'], $end_page );
 		echo '</li>';
 		if ( $end_page < $max_page ) {
 			$last_page_text = $args['last_page_text'];
@@ -148,22 +148,22 @@ class  wp_bootsrap_pagination {
 		//TODO
 	}
 
-	static function comments_simple($args = array()){
+	static function comments_simple( $args = array() ) {
 		$args = wp_parse_args( $args, array(
-			'screen_reader_text'        => esc_html__( 'Comment navigation', 'maketador' ),
-			'next_text'        => esc_html__( 'Newer Comments %s', 'maketador' ),
-			'next_icon'=>'<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>',
-			'previous_text'  => esc_html__( '%s Older Comments', 'maketador' ),
-			'previous_icon'=>'<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>',
+			'screen_reader_text' => esc_html__( 'Comment navigation', 'maketador' ),
+			'next_text'          => esc_html__( 'Newer Comments %s', 'maketador' ),
+			'next_icon'          => '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>',
+			'previous_text'      => esc_html__( '%s Older Comments', 'maketador' ),
+			'previous_icon'      => '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>',
 		) );
 		?>
 		<h2 class="screen-reader-text"><?php echo $args['screen_reader_text'] ?></h2>
 		<ul class="pager">
 			<li class="previous">
-				<?php previous_comments_link( sprintf( $args['previous_text'],$args['previous_icon'] ) ); ?>
+				<?php previous_comments_link( sprintf( $args['previous_text'], $args['previous_icon'] ) ); ?>
 			</li>
 			<li class="next">
-				<?php next_comments_link( sprintf( $args['next_text'],$args['next_icon'] ) ); ?>
+				<?php next_comments_link( sprintf( $args['next_text'], $args['next_icon'] ) ); ?>
 			</li>
 		</ul>
 		<?php

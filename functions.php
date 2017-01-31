@@ -180,13 +180,13 @@ foreach ( $includes as $include ) {
 	/** @noinspection PhpIncludeInspection */
 	require( locate_template( $include ) );
 }
-/** @noinspection PhpIncludeInspection */
-require( locate_template( 'inc/updater.php' ) );
 
-new ThemeUpdateChecker(
-	'maketador', //Theme slug. Usually the same as the name of its directory.
-	'https://draoomedia.com/update-api/?action=get_metadata&slug=maketador&site_installed=https://sigami.net/' //Metadata URL.
-);
+if( ! class_exists('Custom_Theme_Updater_v1') ){
+	/** @noinspection PhpIncludeInspection */
+	require( locate_template( 'inc/custom-theme-updater-v1.php' ) );
+}
+
+new Custom_Theme_Updater_v1('http://draoomedia.dev/updater/v1/','maketador');
 
 Sigami_Maketador::hooks();
 Maketador_Jetpack::hooks();
@@ -194,5 +194,3 @@ Maketador_Bootstrap::hooks();
 Maketador_Customizer::hooks();
 Maketador_Page_Metabox::hooks();
 wp_bootsrap_pagination::hooks();
-
-
