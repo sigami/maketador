@@ -1,17 +1,27 @@
 <?php
 /**
- * Class Name: wp_bootsrap_pagination
- * GitHub URI: https://github.com/sigami/wp_bootsrap_pagination
- * Description: Cover all types of pagination within wordpress link pages, numeric archives and posts
+ * Class Name: wp_bootstrap_pagination
+ * GitHub URI: https://github.com/sigami/wp_bootstrap_pagination
+ * Description: Cover all types of pagination within WordPress. Link pages, Numeric archives and next/previous posts.
  * Version: 1.2
  * Author: Miguel Sirvent
  */
-class  wp_bootsrap_pagination {
-	static function hooks() {
+class  wp_bootstrap_pagination {
+	private static $instance = null;
+
+	public static function instance() {
+		if ( null == self::$instance ) {
+			self::$instance = new self;
+		}
+
+		return self::$instance;
+	}
+
+	private function __construct() {
 		/** wp page links */
-		add_filter( 'wp_link_pages_args', __CLASS__ . '::wp_link_pages_args' );
-		add_filter( 'wp_link_pages_link', __CLASS__ . '::wp_link_pages_link', 10, 2 );
-		add_filter( 'wp_link_pages', __CLASS__ . '::wp_link_pages' );
+		add_filter( 'wp_link_pages_args', __CLASS__ . '::' . 'wp_link_pages_args' );
+		add_filter( 'wp_link_pages_link', __CLASS__ . '::' . 'wp_link_pages_link', 10, 2 );
+		add_filter( 'wp_link_pages', __CLASS__ . '::' . 'wp_link_pages' );
 	}
 
 	/**
@@ -20,7 +30,7 @@ class  wp_bootsrap_pagination {
 	 * @return mixed
 	 */
 	static function wp_link_pages_args( $args ) {
-		$args['before'] = '<nav class="text-center"><ul class="pagination"><li class="disabled"><a href="#">' . __( 'Pages:', 'maketador' ) . '</a></li>';
+		$args['before'] = '<nav class="text-center"><ul class="pagination"><li class="disabled"><a href="#">' . __( 'Pages:', 'text_domain' ) . '</a></li>';
 		$args['after']  = '</ul></nav>';
 
 		return $args;
@@ -45,7 +55,7 @@ class  wp_bootsrap_pagination {
 		$args = wp_parse_args( $args, array(
 			'prev_text'          => '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>%title',
 			'next_text'          => '%title<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>',
-			'screen_reader_text' => __( 'Post navigation', 'maketador' ),
+			'screen_reader_text' => __( 'Post navigation', 'text_domain' ),
 		) );
 
 		$navigation = '';
@@ -68,12 +78,12 @@ class  wp_bootsrap_pagination {
 	static function numeric( $args = array() ) {
 
 		$args = wp_parse_args( $args, array(
-			'prev_text'        => '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>' . __( 'Previous', 'maketador' ),
-			'next_text'        => __( 'Next', 'maketador' ) . '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>',
+			'prev_text'        => '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>' . __( 'Previous', 'text_domain' ),
+			'next_text'        => __( 'Next', 'text_domain' ) . '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>',
 			'first_page_text'  => '&laquo',
-			'first_page_title' => __( 'First', 'maketador' ),
+			'first_page_title' => __( 'First', 'text_domain' ),
 			'last_page_text'   => '&raquo;',
-			'last_page_title'  => __( 'Last', 'maketador' ),
+			'last_page_title'  => __( 'Last', 'text_domain' ),
 			'pages_to_show'    => 5,
 			'before'           => '',
 			'after'            => '',
@@ -150,10 +160,10 @@ class  wp_bootsrap_pagination {
 
 	static function comments_simple( $args = array() ) {
 		$args = wp_parse_args( $args, array(
-			'screen_reader_text' => esc_html__( 'Comment navigation', 'maketador' ),
-			'next_text'          => esc_html__( 'Newer Comments %s', 'maketador' ),
+			'screen_reader_text' => esc_html__( 'Comment navigation', 'text_domain' ),
+			'next_text'          => esc_html__( 'Newer Comments %s', 'text_domain' ),
 			'next_icon'          => '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>',
-			'previous_text'      => esc_html__( '%s Older Comments', 'maketador' ),
+			'previous_text'      => esc_html__( '%s Older Comments', 'text_domain' ),
 			'previous_icon'      => '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>',
 		) );
 		?>
@@ -170,3 +180,5 @@ class  wp_bootsrap_pagination {
 	}
 
 }
+
+wp_bootstrap_pagination::instance();

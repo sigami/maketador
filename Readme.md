@@ -102,6 +102,11 @@ Create a pull request to the master branch.
 
 ## Changelog ##
 
+### 1.1.12 17/02/2016 ###
+- Fixed Bootstrap typo
+- Link on single post featured image
+- Bump FontAwesome 4.7
+
 ### 1.0.5 09/08/2016 ###
 - Improved css
 - Improved template files

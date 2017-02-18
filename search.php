@@ -25,7 +25,7 @@ get_header(); ?>
 				get_template_part( 'template-parts/content', 'search' );
 			endwhile;
 			//the_posts_navigation();
-			wp_bootsrap_pagination::numeric();
+			wp_bootstrap_pagination::numeric();
 		else :
 			get_template_part( 'template-parts/content', 'none' );
 
