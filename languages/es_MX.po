@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Maketador 1.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-09-29 17:46-0500\n"
+"POT-Creation-Date: 2017-03-12 23:04:25+00:00\n"
 "PO-Revision-Date: 2016-09-29 17:46-0500\n"
 "Last-Translator: Miguel Sirvent <miguel.sirvent@gmail.com>\n"
 "Language-Team: Miguel Sirvent <miguel@sigami.net>\n"
@@ -274,39 +274,39 @@ msgstr "Deja un Comentario<span class=\"screen-reader-text\"> en %s</span>"
 msgid "%s Edit %s"
 msgstr "%s Editar %s"
 
-#: inc/wp_bootstrap_pagination.php:23
+#: inc/wp_bootstrap_pagination.php:33
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: inc/wp_bootstrap_pagination.php:48
+#: inc/wp_bootstrap_pagination.php:58
 msgid "Post navigation"
 msgstr "Navegación del artículo"
 
-#: inc/wp_bootstrap_pagination.php:71
+#: inc/wp_bootstrap_pagination.php:81
 msgid "Previous"
 msgstr "Anterior"
 
-#: inc/wp_bootstrap_pagination.php:72
+#: inc/wp_bootstrap_pagination.php:82
 msgid "Next"
 msgstr "Siguiente"
 
-#: inc/wp_bootstrap_pagination.php:74
+#: inc/wp_bootstrap_pagination.php:84
 msgid "First"
 msgstr "Primero"
 
-#: inc/wp_bootstrap_pagination.php:76
+#: inc/wp_bootstrap_pagination.php:86
 msgid "Last"
 msgstr "Último"
 
-#: inc/wp_bootstrap_pagination.php:153
+#: inc/wp_bootstrap_pagination.php:163
 msgid "Comment navigation"
 msgstr "Navegación de Comentarios"
 
-#: inc/wp_bootstrap_pagination.php:154
+#: inc/wp_bootstrap_pagination.php:164
 msgid "Newer Comments %s"
 msgstr "Nuevos comentarios de %s"
 
-#: inc/wp_bootstrap_pagination.php:156
+#: inc/wp_bootstrap_pagination.php:166
 msgid "%s Older Comments"
 msgstr "%s comentarios antiguos"
 
@@ -345,7 +345,7 @@ msgstr ""
 "para obtener mejores resultados."
 
 #. translators: %s: Name of current post.
-#: template-parts/content.php:34
+#: template-parts/content.php:42
 msgid ""
 "Continue reading %s <span class=\"meta-nav\"><span class=\"glyphicon "
 "glyphicon-chevron-right\" aria-hidden=\"true\"></span><\t/span>"

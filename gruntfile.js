@@ -3,6 +3,7 @@ module.exports = function (grunt) {
     var child_slug = grunt.option('slug') || 'maketador_child';
     var child_name = grunt.option('name') || child_slug;
     var child_path = grunt.option('path') || '../';
+    var child_path = grunt.option('path') || '../';
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         vars: grunt.file.readJSON('variables.json'),
@@ -94,6 +95,20 @@ module.exports = function (grunt) {
                 dest: 'dist/fonts/'
             },
             test: {
+                dest: '<%= vars.test_dir %>',
+                expand: true,
+                //nonull: true,
+                //cwd: '<%= pkg.name %>/',
+                src: [
+                    '**',
+                    '!node_modules/**',
+                    '!bower_components/**',
+                    '!svn/**',
+                    '!.gitignore',
+                    '!.git'
+                ]
+            },
+            theme: {
                 dest: '<%= vars.test_dir %>',
                 expand: true,
                 //nonull: true,

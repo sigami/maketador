@@ -10,7 +10,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php the_post_thumbnail( 'maketador_featured', array( 'class'=>'img-responsive') ); ?>
+	<?php
+	if ( is_single() ) {
+		the_post_thumbnail( 'maketador_featured', array( 'class'=>'img-responsive') );
+	} else {
+		echo '<a class="thumbnail" href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
+		the_post_thumbnail( 'maketador_featured', array( 'class'=>'img-responsive') );
+		echo '</a>';
+	}
+	?>
 	<header class="entry-header page-header">
 		<?php
 			if ( is_single() ) {
