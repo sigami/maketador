@@ -32,6 +32,8 @@ Class Maketador_Bootstrap {
 		/** Add thumbnail class to thumbnail links **/
 		add_filter( 'wp_get_attachment_link', __CLASS__ . '::' . 'wp_get_attachment_link', 10, 1 );
 
+		add_filter('img_caption_shortcode_width','__return_null');
+
 		add_filter( 'comment_form_default_fields', __CLASS__ . '::' . 'comment_form_default_fields' );
 	}
 

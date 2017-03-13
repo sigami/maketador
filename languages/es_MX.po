@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Maketador 1.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2017-03-12 23:04:25+00:00\n"
+"POT-Creation-Date: 2017-03-13 04:55:30+00:00\n"
 "PO-Revision-Date: 2016-09-29 17:46-0500\n"
 "Last-Translator: Miguel Sirvent <miguel.sirvent@gmail.com>\n"
 "Language-Team: Miguel Sirvent <miguel@sigami.net>\n"
@@ -80,58 +80,58 @@ msgstr "Barra Lateral del Pie de Página"
 msgid "Skip to content"
 msgstr "Saltar al contenido"
 
-#: inc/maketador_bootstrap.php:86
+#: inc/maketador_bootstrap.php:88
 msgid ""
 "This post is password protected. To view it please enter your password below:"
 msgstr ""
 "Esta entrada está protegida por contraseña. Para verla introduce tu "
 "contraseña."
 
-#: inc/maketador_bootstrap.php:90
+#: inc/maketador_bootstrap.php:92
 msgid "Password"
 msgstr "Contraseña"
 
-#: inc/maketador_bootstrap.php:92
+#: inc/maketador_bootstrap.php:94
 msgid "Submit"
 msgstr "Enviar"
 
-#: inc/maketador_bootstrap.php:177
+#: inc/maketador_bootstrap.php:179
 msgid "Edit"
 msgstr "Editar"
 
-#: inc/maketador_bootstrap.php:181
+#: inc/maketador_bootstrap.php:183
 msgid "Your comment is awaiting moderation."
 msgstr "Tu comentario est&aacute; esperando ser moderado"
 
-#: inc/maketador_bootstrap.php:211
+#: inc/maketador_bootstrap.php:213
 msgid "Name"
 msgstr "Nombre"
 
-#: inc/maketador_bootstrap.php:212 inc/maketador_bootstrap.php:225
+#: inc/maketador_bootstrap.php:214 inc/maketador_bootstrap.php:227
 msgid "required"
 msgstr "requerido"
 
-#: inc/maketador_bootstrap.php:218
+#: inc/maketador_bootstrap.php:220
 msgid "Your Name"
 msgstr "Tú nombre"
 
-#: inc/maketador_bootstrap.php:224
+#: inc/maketador_bootstrap.php:226
 msgid "Email"
 msgstr "Email"
 
-#: inc/maketador_bootstrap.php:231
+#: inc/maketador_bootstrap.php:233
 msgid "Your Email"
 msgstr "Tu Email"
 
-#: inc/maketador_bootstrap.php:234
+#: inc/maketador_bootstrap.php:236
 msgid "will not be published"
 msgstr "No será publicado"
 
-#: inc/maketador_bootstrap.php:237
+#: inc/maketador_bootstrap.php:239
 msgid "Website"
 msgstr "Sitio Web"
 
-#: inc/maketador_bootstrap.php:243
+#: inc/maketador_bootstrap.php:245
 msgid "Your Website"
 msgstr "Tu sitio web"
 
